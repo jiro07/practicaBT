@@ -1,0 +1,31 @@
+
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="toggleVarChild"
+      fixedTopGap="40"
+      >
+      <mat-card class="card">
+        <mat-card-content>
+          <div class="row0">
+            <button mat-icon-button>
+              <mat-icon>add_task</mat-icon>
+              Agregar gestión
+            </button>
+          </div>
+
+          <div class="col1">
+            <app-lateral-content></app-lateral-content>
+          </div>
+
+          <div class="sidenav-content col2">
+            <button mat-button (click)="toggle()">
+              <mat-icon>arrow_left</mat-icon>
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+  </mat-sidenav>
+
+
+

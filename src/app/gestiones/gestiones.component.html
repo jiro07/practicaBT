@@ -1,0 +1,45 @@
+
+<mat-toolbar class="toolbar-b">
+  <span class="spacer"></span>
+  <span style="font-size: 10px;">Descarga documentos pdf</span>
+  <button mat-icon-button>
+    <mat-icon>file_download</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" fixedInViewport
+      mode="side"
+      opened="true"
+      fixedTopGap="40"
+      >
+    <mat-toolbar style="justify-content:center">Gestiones</mat-toolbar>
+    <mat-nav-list >
+      <a mat-list-item class="format" href="#"> <mat-icon>folder_open</mat-icon>  Categoría 1 <mat-icon style="justify-content:right">more_vert</mat-icon></a>
+      <a mat-list-item class="format" href="#"> <mat-icon>folder_open</mat-icon>  Categoría 2 <mat-icon style="justify-content:right">more_vert</mat-icon></a>
+      <a mat-list-item class="format" href="#"> <mat-icon>folder_open</mat-icon>  Categoría 3 <mat-icon style="justify-content:right">more_vert</mat-icon></a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- <mat-card class="card"> -->
+    <!-- <div col1> -->
+      <mat-sidenav-content class="sidenav-content">
+        <div class="sidenav-content-col1">
+          <app-barralateral [toggleVarChild]=toggleVarParent></app-barralateral>
+        </div>
+
+        <!-- <div > -->
+          <button fxLayoutAlign="center center" class="button1 col2" mat-button (click)="rightsidetoggle()">
+            <mat-icon>arrow_right</mat-icon>
+          </button>
+        <!-- </div> -->
+      </mat-sidenav-content>
+    <!-- </div> -->
+
+  <!-- </mat-card> -->
+</mat-sidenav-container>
+
+
+
